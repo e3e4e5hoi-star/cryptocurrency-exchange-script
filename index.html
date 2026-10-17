@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="راهنمای راه‌اندازی اسکریپت صرافی ارز دیجیتال Codono">
+  <title>Crypto Exchange Script | راهنمای راه‌اندازی</title>
+  <style>
+    :root { color-scheme: dark; --bg: #090b10; --panel: #11151d; --line: #27303d; --text: #f4f7fb; --muted: #a9b3c2; --accent: #69e0b2; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 15% 10%, #16372f 0, transparent 35%), var(--bg); color: var(--text); font: 16px/1.8 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { width: min(1100px, calc(100% - 40px)); margin: auto; padding: 28px 0 64px; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 10px 0 72px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: .04em; }
+    .mark { display: grid; place-items: center; width: 38px; height: 38px; border: 2px solid var(--accent); color: var(--accent); border-radius: 50%; font-weight: 900; }
+    .status { color: var(--accent); font-size: 13px; }
+    .hero { max-width: 760px; padding-bottom: 52px; }
+    .eyebrow { color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { max-width: 720px; margin: 12px 0 18px; font-size: clamp(2.3rem, 7vw, 5.5rem); line-height: 1.05; letter-spacing: -.05em; }
+    .hero p { max-width: 650px; margin: 0; color: var(--muted); font-size: 1.08rem; }
+    .notice { margin-top: 28px; padding: 16px 18px; border: 1px solid #845f2d; border-radius: 10px; background: #231b10; color: #f4d49a; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .card { display: flex; flex-direction: column; min-height: 190px; padding: 22px; border: 1px solid var(--line); border-radius: 12px; background: color-mix(in srgb, var(--panel) 88%, transparent); }
+    .card h2 { margin: 0 0 8px; font-size: 1.1rem; }
+    .card p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .card a { margin-top: auto; padding-top: 18px; color: var(--accent); font-weight: 700; text-decoration: none; }
+    .card a:hover, .card a:focus-visible { text-decoration: underline; }
+    footer { margin-top: 64px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+    @media (max-width: 700px) { main { width: min(100% - 28px, 1100px); } header { padding-bottom: 48px; } .grid { grid-template-columns: 1fr; } .card { min-height: 0; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand"><span class="mark">C</span><span>CODONO EXCHANGE</span></div>
+      <span class="status">● راهنما آنلاین است</span>
+    </header>
+    <section class="hero" aria-labelledby="title">
+      <span class="eyebrow">Exchange infrastructure / v7.5.5</span>
+      <h1 id="title">صفحه اصلی آماده است.</h1>
+      <p>این شاخه شامل مستندات و اسکریپت‌های نصب اسکریپت صرافی ارز دیجیتال است، نه پنل اجرایی کامل. برای اجرای پنل، فایل‌های محصول و تنظیمات سرور باید جداگانه نصب و پیکربندی شوند.</p>
+      <div class="notice">اگر انتظار پنل معاملاتی داشتید، این صفحه سفید به‌دلیل نبودن فایل‌های فرانت‌اند در این مخزن بود؛ اکنون به‌جای صفحه خالی، مسیر درست راه‌اندازی نمایش داده می‌شود.</div>
+    </section>
+    <section class="grid" aria-label="مسیرهای راهنما">
+      <article class="card"><h2>شروع سریع Ubuntu</h2><p>نصب LEMP، ایجاد دیتابیس، WebSocket و Cron را مرحله‌به‌مرحله دنبال کنید.</p><a href="docs/ubuntu_setup/README.md">مشاهده راهنما ←</a></article>
+      <article class="card"><h2>راه‌اندازی OneInStack</h2><p>اسکریپت‌های آماده برای نصب یکپارچه سرویس‌های موردنیاز سرور.</p><a href="docs/oneinstack_setup/README.md">مشاهده راهنما ←</a></article>
+      <article class="card"><h2>بررسی نصب</h2><p>وضعیت نصب و نیازمندی‌های PHP، Node.js و سرویس‌های صرافی را بررسی کنید.</p><a href="install_check.php">باز کردن بررسی نصب ←</a></article>
+    </section>
+    <footer>برای پنل واقعی، نسخه کامل و لایسنس محصول را روی سرور نصب کنید. این صفحه فقط نقطه ورود امن مخزن مستندات است.</footer>
+  </main>
+</body>
+</html>
